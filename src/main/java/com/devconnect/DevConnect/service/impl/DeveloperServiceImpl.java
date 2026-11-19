@@ -84,4 +84,22 @@ public class DeveloperServiceImpl implements DeveloperService {
 
         return developer;
     }
+
+    @Override
+    public Developer updateDeveloper(Long id, Map<String, Object> updates) {
+        if(!developerStore.containsKey(id)) {
+            return new Developer();
+        }
+
+
+    }
+
+    public Developer updateDeveloperName(Long id, String name) {
+
+    }
+
+    public Developer updateDeveloperEmail(Long id, String email) {
+
+    }
+
 }

@@ -65,4 +65,10 @@ public class DeveloperController {
         return ResponseEntity.ok(developerService.replaceDeveloper(id, developer));
     }
 
+    @PatchMapping("/{id}")
+    public ResponseEntity<Developer> updateDeveloper(@PathVariable Long id,
+                                                     @RequestBody Map<String, Object> updates) {
+        return ResponseEntity.ok(developerService.updateDeveloper(id, updates));
+    }
+
 }
