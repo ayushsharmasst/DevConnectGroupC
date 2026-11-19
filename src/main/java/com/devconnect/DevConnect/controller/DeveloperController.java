@@ -62,7 +62,7 @@ public class DeveloperController {
     @PutMapping("/{id}")
     public ResponseEntity<Developer> replaceDeveloper(@PathVariable Long id, @RequestBody Developer developer) {
 
-        return ResponseEntity.ok(developerService.replaceDeveloper(developer));
+        return ResponseEntity.ok(developerService.replaceDeveloper(id, developer));
     }
 
 }
