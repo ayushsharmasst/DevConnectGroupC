@@ -21,6 +21,16 @@ public interface DeveloperService {
      */
     List<Developer> getDeveloperBySkill(String skill);
 
+    /*
+    Create a new Developer Profile
+     */
+    Developer createDeveloper(Developer developer);
+
+    /*
+    Update the complete Developer Profile
+     */
+    Developer replaceDeveloper(Long id, Developer developer);
+
 
 
 }
